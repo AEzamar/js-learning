@@ -1,3 +1,4 @@
+alert("Testing")
 function multiplyAll(arr) {
 	return function(number) {
 		return arr.forEach(ele => ele * number)
