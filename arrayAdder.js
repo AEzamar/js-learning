@@ -1,21 +1,21 @@
 function arrAdder(arr) {
-	let arrStr = " "
+	let arrStr = " ";
 	for(let i = 0; i < arr.length; i++) {
-		arrStr += ' '
+		arrStr += ' ';
 		for(let j = 0; j < arr.length; j++) {
-			if (arr[j][i] !== undefined) arrStr += arr[j][i]
+			if (arr[j][i] !== undefined) arrStr += arr[j][i];
 		}
 	}
-	return arrStr.trim()
+	return arrStr.trim();
 }
 
-console.log(arrAdder([
+/*console.log(arrAdder([
 ['J','L','L','M']
 ,['u','i','i','a']
 ,['s','v','f','n']
-,['t','e','e','']]))
+,['t','e','e','']]))*/
 
-console.log(arrAdder([ 
+/*console.log(arrAdder([ 
   [ 'T', 'M', 'i', 't', 'p', 'o', 't', 'c' ],
   [ 'h', 'i', 's', 'h', 'o', 'f', 'h', 'e' ],
   [ 'e', 't', '', 'e', 'w', '', 'e', 'l' ],
@@ -27,4 +27,19 @@ console.log(arrAdder([
   [ '', 'd', '', '', 's', '', '', '' ],
   [ '', 'r', '', '', 'e', '', '', '' ],
   [ '', 'i', '', '', '', '', '', '' ],
-  [ '', 'a', '', '', '', '', '', '' ] ]))
+  [ '', 'a', '', '', '', '', '', '' ] ]))*/
+
+function arrAdder1(arr) {
+	arrStr = "";
+	let j = 0
+	for(let i = 0; i < arr.length; i++) {
+		console.log(arr[i][j]);
+		j += 1;
+	}
+}
+
+console.log(arrAdder1([
+['J','L','L','M']
+,['u','i','i','a']
+,['s','v','f','n']
+,['t','e','e','']]))
