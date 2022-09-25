@@ -4,7 +4,7 @@ function arrAdder(arr) {
 		arrStr += ' '
 		for(let j = 0; j < arr[i].length; j++) {
 			arrStr += arr[j][i]
-			if (arr[j][i] === "") arrStr += " "
+			if (arr[j][i] === "") arrStr += ""
 		}
 	}
 	return arrStr.trim()
