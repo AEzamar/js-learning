@@ -1,7 +1,10 @@
 Array.prototype.reverse = function() {
-	this.unshift(this.pop())
-	console.log(this)
-}
+	for(let i = 0; i < this.length; i++) {
+		const last = this.pop()
+		this.unshift(last);
+	}
+	return this;
+};
 
 const numbers = [1, 2, 3, 4]
-console.log(Array.prototype.reverse(numbers))
+console.log(numbers.reverse())
