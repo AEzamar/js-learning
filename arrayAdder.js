@@ -32,9 +32,11 @@ function arrAdder(arr) {
 function arrAdder1(arr) {
 	arrStr = "";
 	let j = 0
-	for(let i = 0; i < arr.length; i++) {
-		console.log(arr[i][j]);
-		j += 1;
+	for(let i = 0; i <= arr.length; i++) {
+		arrStr += " "
+		for(let j = 0; j < arr.length; j++) {
+			console.log(arr[j])
+		}
 	}
 }
 
