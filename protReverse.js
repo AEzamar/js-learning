@@ -1,8 +1,5 @@
 Array.prototype.reverse = function() {
-	for(let item in this) {
-		this.unshift(item);
-	}
-	return this;
+	return [this[this.length - 1]];
 };
 
 const numbers = [1, 2, 3, 4]
