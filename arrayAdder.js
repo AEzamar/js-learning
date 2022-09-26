@@ -1,10 +1,10 @@
 function arrAdder(arr) {
 	let arrStr = " ";
-	for(let i = 0; i < arr.length; i++) {
-		arrStr += ' ';
+	for(let i = 0; i < arr[0].length; i++) {
 		for(let j = 0; j < arr.length; j++) {
 			if (arr[j][i] !== undefined) arrStr += arr[j][i];
 		}
+		arrStr += ' ';
 	}
 	return arrStr.trim();
 }
