@@ -2,20 +2,20 @@ function arrAdder(arr) {
 	let arrStr = " ";
 	for(let i = 0; i < arr[0].length; i++) {
 		for(let j = 0; j < arr.length; j++) {
-			if (arr[j][i] !== undefined) arrStr += arr[j][i];
+			arrStr += arr[j][i];
 		}
 		arrStr += ' ';
 	}
 	return arrStr.trim();
 }
 
-/*console.log(arrAdder([
+console.log(arrAdder([
 ['J','L','L','M']
 ,['u','i','i','a']
 ,['s','v','f','n']
-,['t','e','e','']]))*/
+,['t','e','e','']]))
 
-/*console.log(arrAdder([ 
+console.log(arrAdder([ 
   [ 'T', 'M', 'i', 't', 'p', 'o', 't', 'c' ],
   [ 'h', 'i', 's', 'h', 'o', 'f', 'h', 'e' ],
   [ 'e', 't', '', 'e', 'w', '', 'e', 'l' ],
@@ -27,21 +27,4 @@ function arrAdder(arr) {
   [ '', 'd', '', '', 's', '', '', '' ],
   [ '', 'r', '', '', 'e', '', '', '' ],
   [ '', 'i', '', '', '', '', '', '' ],
-  [ '', 'a', '', '', '', '', '', '' ] ]))*/
-
-function arrAdder1(arr) {
-	arrStr = "";
-	for(let i = 0; i < arr.length; i++) {
-		arrStr += " "
-		for(let j = 0; j < arr.length; j++) {
-			arrStr += arr[j][i]
-		}
-	}
-	return arrStr.trim()
-}
-
-console.log(arrAdder1([
-['J','L','L','M']
-,['u','i','i','a']
-,['s','v','f','n']
-,['t','e','e','']]))
+  [ '', 'a', '', '', '', '', '', '' ] ]))
