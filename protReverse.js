@@ -16,6 +16,7 @@ Array.prototype.newReverse = function() {
 	while(i <= this.length) {
 		this.unshift(this[i]);
 		i++;
+		this.pop()
 	};
 	return this;
 };
