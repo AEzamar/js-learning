@@ -1,5 +1,5 @@
 function min(arr, toReturn) {
-  const minimum = Math.min(...arr)
+  const minimum = Math.min(...arr);
   if(toReturn.toLowerCase() === 'value') return minimum;
   else if(toReturn.toLowerCase() === 'index') return arr.indexOf(minimum);
 };
