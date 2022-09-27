@@ -15,7 +15,7 @@ Array.prototype.newReverse = function() {
 	let i;
 	while(i < this.length) {
 		i = 0;
-		this.unshift(this[i]);
+		this.push(this.shiftt());
 		i++;
 		//this.pop()
 	};
