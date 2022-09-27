@@ -12,11 +12,12 @@ console.log(numbers.reverse());
 
 
 Array.prototype.newReverse = function() {
-	let i = 0;
-	while(i <= this.length) {
+	let i;
+	while(i < this.length) {
+		i = 0;
 		this.unshift(this[i]);
 		i++;
-		this.pop()
+		//this.pop()
 	};
 	return this;
 };
