@@ -9,14 +9,3 @@ Array.prototype.reverse = function() {
 
 const numbers = [1, 2, 3, 4]
 console.log(numbers.reverse());
-
-
-Array.prototype.newReverse = function() {
-	for(let i = 0; i <= this.length; i++) {
-		this.push(this.shift())
-	}
-	return this;
-};
-
-const letters = ['a', 'b', 'c', 'd'];
-console.log(letters.newReverse());
