@@ -6,3 +6,10 @@ function min(arr, toReturn) {
 
 console.log(min([2, 4, 8, 1, -3, 0, 5, 7], 'value'));
 console.log(min([2, 4, 8, 1, 3, 0, 5, 7], 'index'));
+
+//User submitted solution
+
+/*function min(arr, toReturn) {
+  var val = Math.min.apply(null, arr)
+  return toReturn == 'value' ? val : arr.indexOf(val)
+}*/

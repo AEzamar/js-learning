@@ -1,7 +1,7 @@
 Array.prototype.reverse = function() {
 	let temp_arr = [];
 	for(let i = this.length; i > 0; i--) {
-		temp_arr.push(this.pop());	
+		temp_arr.shift(this.unshift());	
 	};
 	this.push(...temp_arr);
 	return this;
