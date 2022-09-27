@@ -12,7 +12,7 @@ console.log(numbers.reverse());
 
 
 Array.prototype.newReverse = function() {
-	for(let i = 0; i < this.length; i++) {
+	for(let i = 0; i <= this.length; i++) {
 		this.push(this.shift())
 	}
 	return this;
