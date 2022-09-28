@@ -1,5 +1,5 @@
 function fillArr(n) {
-	return [...Array(n).keys()];
+	return n > 0 ? [...Array(n).keys()] : [];
 };
 
 console.log(fillArr(5));
