@@ -7,7 +7,7 @@ function fillArr(n) {
 
 	};*/
 
-	return Array.from(length = n, (_, i) => i = randNum());
+	return Array.from({ length: n}, (_, i) => i = randNum());
 };
 
 console.log(fillArr(5));
