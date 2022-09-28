@@ -2,5 +2,5 @@
 	return n > 0 ? [...Array(n).keys()] : [];
 };*/
 
-function arr(N) => N > 0 ? [...Array(N).keys()] : [];
-console.log(fillArr(5));
+const arr = function(N) => N > 0 ? [...Array(N).keys()] : [];
+console.log(arr(5));
