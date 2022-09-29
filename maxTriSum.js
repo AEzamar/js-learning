@@ -1,7 +1,8 @@
 function maxTriSum(numbers){
 	const sortedNumbers = numbers.sort((a, b) => b - a);
 	const numbersSet = new Set(sortedNumbers)
-	const maxTriplet = numbersSet.slice(0, 3);
+	//console.log(numbersSet)
+	const maxTriplet = Array.from(numbersSet).slice(0, 3);
 	return maxTriplet.reduce((total, curr) => total + curr, 0);
 };
 
