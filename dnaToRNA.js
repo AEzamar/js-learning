@@ -1,9 +1,9 @@
 function dnaToRNA(dna) {
 	let rna;
 	for(let acid of dna) {
-		if(acid === 'T') rna = dna.replaceAll(acid, 'U');
+		rna = dna.replace(/T/g, 'U');
 	}
-	return rna; 
+	return dna === "" ? "" : rna; 
 }
 
 console.log(dnaToRNA('GCAT'));
