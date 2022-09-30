@@ -3,6 +3,6 @@ function DNAtoRNA(dna) {
 	return dna === "" ? "" : rna; 
 };
 
-console.log(dnaToRNA('GCAT'));
-console.log(dnaToRNA('TTTT'));
+console.log(DNAtoRNA('GCAT'));
+console.log(DNAtoRNA('TTTT'));
 console.log(DNAtoRNA('"GACCGCCGCC"'));
