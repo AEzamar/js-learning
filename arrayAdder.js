@@ -28,3 +28,10 @@ console.log(arrAdder([
   [ '', 'r', '', '', 'e', '', '', '' ],
   [ '', 'i', '', '', '', '', '', '' ],
   [ '', 'a', '', '', '', '', '', '' ] ]))
+
+//User submitted solution
+/*const arrAdder = (arr) => {
+  return arr[0]
+    .map((el, i) => arr.map((el, j) => arr[j][i]).join(""))
+    .join(" ");
+};*/
