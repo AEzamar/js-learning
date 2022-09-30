@@ -1,6 +1,5 @@
 function DNAtoRNA(dna) {
-	const rna = dna.replace(/T/g, 'U');
-	return dna === "" ? "" : rna; 
+	return dna.replace(/T/g, 'U');
 };
 
 console.log(DNAtoRNA('GCAT'));
