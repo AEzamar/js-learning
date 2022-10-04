@@ -13,9 +13,8 @@ function zeroPlentiful(arr) {
             zeroCount = 0;
             sequenceCount = 0;
         }
-    console.log('Outer count', outerCount);
-    return outerCount > 0 ? sequenceCount += outerCount : sequenceCount;
     }
+    return outerCount > 0 ? sequenceCount = outerCount : sequenceCount;
 }
 
 console.log(zeroPlentiful([3]));
