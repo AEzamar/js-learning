@@ -17,3 +17,4 @@ function zeroPlentiful(arr) {
 }
 
 console.log(zeroPlentiful([3]));
+console.log(zeroPlentiful([0,0,0,0,0,0]));
