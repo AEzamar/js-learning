@@ -1,4 +1,4 @@
-function zeroPlentiful(arr):
+function zeroPlentiful(arr) {
     if(arr.every(num => num === 0)) return 1;
     if(!arr.includes(0)) return 0;
     let zeroCount = 0, sequenceCount = 0, outerCount = 0;
@@ -12,5 +12,8 @@ function zeroPlentiful(arr):
         }else {
             sequenceCount = 0;
         }
-    return outerCount > 1 ? sequenceCount = outerCount : sequenceCount;
-};
+    return outerCount > 1 ? sequenceCount += outerCount : sequenceCount;
+    }
+}
+
+console.log(zeroPlentiful([3]));
