@@ -10,11 +10,11 @@ function zeroPlentiful(arr) {
                 outerCount++;
             }
         }else {
-            zeroCount = 0;
+            //zeroCount = 0;
             sequenceCount = 0;
         }
-    }
     return outerCount > 0 ? sequenceCount = outerCount : sequenceCount;
+    }
 }
 
 console.log(zeroPlentiful([3]));
