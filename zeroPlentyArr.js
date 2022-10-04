@@ -10,6 +10,7 @@ function zeroPlentiful(arr) {
                 outerCount++;
             }
         }else {
+            zeroCount = 0;
             sequenceCount = 0;
         }
     return outerCount > 1 ? sequenceCount += outerCount : sequenceCount;
@@ -18,3 +19,4 @@ function zeroPlentiful(arr) {
 
 console.log(zeroPlentiful([3]));
 console.log(zeroPlentiful([0,0,0,0,0,0]));
+console.log(zeroPlentiful([1,0,0,0,0,5,4,0,0,0,0,0]))
