@@ -1,14 +1,16 @@
 function solve(arr){
     const copyArr = [...arr];
     let noParity = 0;
+    let parityIndex = 0;
     for(let i = 0; i < copyArr.length; i++) {
-        let first = copyArr.shift();
-        if(first > 0) {
-            if copyArr !== -Math.abs(first) noParity = first;
-        }else if(first < 0) {
-            if copyArr !== Math.abs(first) noParity = first;
-        };
+        if(copyArr[parityIndex] > 0) {
+            if copyArr[i] !== -Math.abs(copyArr[parityIndex]) noParity = copyArr[parityIndex];
+        }else if(copyArr[parityIndex] < 0) {
+            if copyArr[i] !== Math.abs(copyArr[parityIndex]) noParity = copyArr[parityIndex];
+        }
+        parityIndex++;
     };
+    return noParity;
 };
 
 console.log(solve([1, -1, 2, -2, 3]))
