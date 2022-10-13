@@ -3,12 +3,15 @@ function solve(arr) {
     let noParity = 0;
     let j = 0;
     for(let i = 0; i < copyArr.length; i++) {
-        if(copyArr[j] !== copyArr[i]) noParity = copyArr[j];
-        else {
+        if(copyArr[j] !== copyArr[i]) {
+            noParity = copyArr[j];
+            j++;
+        } 
+      /*  else {
             if(copyArr[j] > 0 && copyArr[j] !== -Math.abs(copyArr[i])) noParity = copyArr[j]
             else if(copyArr[j] < 0 && copyArr[j] !== Math.abs(copyArr[i])) noParity = copyArr[j]
-        }
-        j++;
+        }*/
+        
     };
     return noParity;
 };
