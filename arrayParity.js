@@ -1,6 +1,7 @@
 function solve(arr) {
     const copyArr = [...arr];
-    let noParity = copyArr.filter(item => item !== -Math.abs(item) or item !== Math.abs(item))    
+    let i = 0
+    let noParity = copyArr.filter(item)    
     return noParity;
 };
 
