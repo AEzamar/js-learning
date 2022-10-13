@@ -3,9 +3,9 @@ function solve(arr){
     let noParity = 0;
     let parityIndex = 0;
     for(let i = 0; i < copyArr.length; i++) {
-        copyArr.forEach(function(_, j) {
-            if(copyArr[j] > 0 && copyArr[j] !== -Math.abs(copyArr[i])) noParity = copyArr[j];
-        });
+        for(let j = 0; j < copyArr.length; j++) {
+            //if copyArr[j] > 0 && copyArr[j] !== -Math.abs(copyArr[j]) noParity = copyArr[j];
+        }
     };
     return noParity;
 };
