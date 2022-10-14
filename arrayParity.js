@@ -1,11 +1,9 @@
 function solve(arr) {
     const copyArr = [...arr];
-    //let i = 0
     let noParity;
     const positiveArr = copyArr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = copyArr.filter(item => item < 0).sort((a, b) => a - b);
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
-    //console.log(dynamicLen);
     for(let i = 0; i < dynamicLen; i++) {
         if(positiveArr[i] !== negativeArr[i]) {
             noParity = positiveArr[i];
