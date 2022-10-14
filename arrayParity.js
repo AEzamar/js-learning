@@ -4,9 +4,9 @@ function solve(arr) {
     let noParity;
     const positiveArr = copyArr.filter(item => item > 0);
     const negativeArr = copyArr.filter(item => item < 0);
-    const dynamicLen = positiveArr.length > negativeArr.length ?? negativeArr.length > positiveArr.length;
+    const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
     console.log(dynamicLen);
-    for(let i = 0; i < copyArr.length; i++) {
+    for(let i = 0; i < dynamicLen; i++) {
         positiveArr[i] !== negativeArr[i]
     }
     //let noParity = copyArr.filter(item => item !== -Math.abs(item));
