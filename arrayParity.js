@@ -5,9 +5,9 @@ function solve(arr) {
     const positiveArr = copyArr.filter(item => item > 0);
     const negativeArr = copyArr.filter(item => item < 0);
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
-    console.log(dynamicLen);
+    //console.log(dynamicLen);
     for(let i = 0; i < dynamicLen; i++) {
-        positiveArr[i] !== negativeArr[i]
+        positiveArr[i] !== negativeArr[i] ? noParity = positiveArr[i] : noParity = negativeArr[i];
     }
     //let noParity = copyArr.filter(item => item !== -Math.abs(item));
     //let noParity = !copyArr.includes(item => item !== -Math.abs(item) || item !== Math.abs(item));    
