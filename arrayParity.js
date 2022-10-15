@@ -17,10 +17,10 @@ function solve(arr) {
     return noParity;
 };
 
-console.log(solve([1, -1, 2, -2, 3]));
+/*console.log(solve([1, -1, 2, -2, 3]));
 console.log(solve([1, 3, 2, -1, -3]));
 console.log(solve([-3, 1, 2, 3, -1, -4, -2]));
-console.log(solve([1, -1, 2, -2, 3, 3]));
+console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
     return arr.filter(function(_, i, arr1) {
@@ -31,3 +31,8 @@ function solve1(arr) {
         }
     });
 }
+
+console.log(solve1([1, -1, 2, -2, 3]));
+console.log(solve1([1, 3, 2, -1, -3]));
+console.log(solve1([-3, 1, 2, 3, -1, -4, -2]));
+console.log(solve1([1, -1, 2, -2, 3, 3]));
