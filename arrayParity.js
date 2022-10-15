@@ -4,6 +4,8 @@ function solve(arr) {
     const positiveArr = copyArr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = copyArr.filter(item => item < 0).sort((a, b) => a - b);
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
+    console.log('Positive', positiveArr);
+    console.log('Negative', negativeArr);
     for(let i = 0; i < arr; i++) {
         if(positiveArr[i] !== negativeArr[i]) {
             noParity = positiveArr[i];
