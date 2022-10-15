@@ -24,9 +24,9 @@ console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
     return arr.filter(function(_, i, arr1) {
-        if(ele > 0) {
+        if(arr1[i] > 0) {
             return arr1[i] !== -Math.abs(arr1[i]);
-        }else if(ele < 0) {
+        }else if(arr1[i] < 0) {
             return arr1[i] !== Math.abs(arr1[i]);
         }
     });
