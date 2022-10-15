@@ -22,8 +22,12 @@ console.log(solve([1, 3, 2, -1, -3]));
 console.log(solve([-3, 1, 2, 3, -1, -4, -2]));
 console.log(solve([1, -1, 2, -2, 3, 3]));
 
-function solve(arr) {
-    arr.filter(function(ele) {
-        if (ele > 0)
+function solve1(arr) {
+    return arr.filter(function(_, i, arr1) {
+        if(ele > 0) {
+            return arr1[i] !== -Math.abs(arr1[i]);
+        }else if(ele < 0) {
+            return arr1[i] !== Math.abs(arr1[i]);
+        }
     });
 }
