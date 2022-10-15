@@ -6,14 +6,11 @@ function solve(arr) {
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
     for(let i = 0; i < arr; i++) {
         if(positiveArr[i] !== negativeArr[i]) {
-            noParity += positiveArr[i];
+            noParity = positiveArr[i];
         }else if(negativeArr[i] !== positiveArr[i]){
-            noParity += negativeArr[i];
+            noParity = negativeArr[i];
         }
-        //positiveArr[i] !== negativeArr[i] ? noParity = positiveArr[i] : noParity = negativeArr[i];
-    }
-    //let noParity = copyArr.filter(item => item !== -Math.abs(item));
-    //let noParity = !copyArr.includes(item => item !== -Math.abs(item) || item !== Math.abs(item));    
+    }    
     return noParity;
 };
 
