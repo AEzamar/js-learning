@@ -22,9 +22,9 @@ function solve(arr) {
     }  */
     let outerIndexer = 0;
     for(let i = 0; i < arr.length; i++) {
-        arr.forEach(function(_, i) {
-            if(copyArr[outerIndexer] !== arr[i]) noParity = copyArr[outerIndexer];
-        });
+        for(let j = 0; j < arr.length; j++) {
+            if(copyArr[j] !== arr[i]) noParity = copyArr[j];
+        };
         outerIndexer++;
     };  
     return noParity;
