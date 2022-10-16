@@ -4,7 +4,9 @@ function solve(arr) {
     const positiveArr = copyArr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = copyArr.filter(item => item < 0).sort((a, b) => a - b);
     const positiveFilter = positiveArr.filter((_, i, arrPosi) => -Math.abs(arrPosi[i]) !== negativeArr[i]);
+    const negativeFilter = negativeArr.filter((_, i, arrNega) => Math.abs(arrNega[i]) !== positiveArr[i])
     console.log(positiveFilter);
+    console.log(negativeFilter);
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
     //console.log('Positive', positiveArr);
     //console.log('Negative', negativeArr);
