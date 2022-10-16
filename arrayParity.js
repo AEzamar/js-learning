@@ -23,8 +23,11 @@ function solve(arr) {
     let outerIndexer = 0;
     for(let i = 0; i < arr.length; i++) {
         for(let j = 0; j < arr.length; j++) {
-            if(copyArr[j] !== arr[i]) noParity = copyArr[j];
-        };
+            if(copyArr[j] !== arr[i]) {
+                console.log('CopyArr[j]', copyArr[j])
+                noParity = copyArr[j];
+            }
+        }
         outerIndexer++;
     };  
     return noParity;
