@@ -1,7 +1,7 @@
 function solve(arr) {
     const copyArr = [...arr];
     let noParity = 0;
-    const positiveArr = copyArr.filter(item => item > 0).sort((a, b) => a - b);
+    /*const positiveArr = copyArr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = copyArr.filter(item => item < 0).sort((a, b) => a - b);
     const positiveFilter = positiveArr.filter((_, i, arrPosi) => -Math.abs(arrPosi[i]) !== negativeArr[i]);
     const negativeFilter = negativeArr.filter((_, i, arrNega) => Math.abs(arrNega[i]) !== positiveArr[i])
@@ -19,7 +19,11 @@ function solve(arr) {
         }else if(negativeArr[i] !== positiveArr[i]){
             noParity = negativeArr[i];
         }
-    }    
+    }  */
+    let outerIndexer = 0;
+    for(let i = 0; i < copyArr.lentgh; i++) {
+
+    };  
     return noParity;
 };
 
