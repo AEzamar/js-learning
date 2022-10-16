@@ -9,8 +9,9 @@ function solve(arr) {
     console.log('Negative filter:', negativeFilter);
     const positiveMap = positiveArr.map(function(_, i, arrPo) {
         if (-Math.abs(arrPo[i]) !== negativeArr[i])
-            console.log(arrPo[i]);
+            return arrPo[i];
     });
+    console.log('Positive Map', positiveMap);
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
     for(let i = 0; i < arr; i++) {
         if(positiveArr[i] !== negativeArr[i]) {
