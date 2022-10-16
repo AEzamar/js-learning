@@ -8,8 +8,6 @@ function solve(arr) {
     console.log('Positive filter:', positiveFilter);
     console.log('Negative filter:', negativeFilter);
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
-    //console.log('Positive', positiveArr);
-    //console.log('Negative', negativeArr);
     for(let i = 0; i < arr; i++) {
         if(positiveArr[i] !== negativeArr[i]) {
             noParity = positiveArr[i];
