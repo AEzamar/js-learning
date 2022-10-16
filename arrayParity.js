@@ -7,6 +7,10 @@ function solve(arr) {
     const negativeFilter = negativeArr.filter((_, i, arrNega) => Math.abs(arrNega[i]) !== positiveArr[i])
     console.log('Positive filter:', positiveFilter);
     console.log('Negative filter:', negativeFilter);
+    const positiveMap = positiveArr.map(function(_, i, arrPo) {
+        if (-Math.abs(arrPo[i]) !== negativeArr[i])
+            console.log(arrPo[i]);
+    });
     const dynamicLen = positiveArr.length > negativeArr.length ? positiveArr.length : negativeArr.length;
     for(let i = 0; i < arr; i++) {
         if(positiveArr[i] !== negativeArr[i]) {
