@@ -25,7 +25,7 @@ function solve(arr) {
         for(let j = 0; j < arr.length; j++) {
             if(copyArr[j] !== arr[i]) {
                 console.log('CopyArr[j]', copyArr[j])
-                noParity = copyArr[j];
+                return noParity = copyArr[j];
             }
         }
         outerIndexer++;
