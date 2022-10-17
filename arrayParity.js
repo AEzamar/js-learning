@@ -2,9 +2,11 @@ function solve(arr) {
     let noParity = 0;
     const copyArr = [...arr];
     const positiveArr = arr.filter(ele => ele > 0).sort((a, b) => a - b);
-    const negativeArr = arr.filter(ele => ele < 0).sort((a, b) => a - b);
-    if(positiveArr.length > negativeArr.length) noParity = positiveArr[-1];
-    else noParity = negativeArr[-1];
+    console.log(positiveArr);
+    const negativeArr = arr.filter(ele => ele < 0).sort((a, b) => b - a);
+    console.log(negativeArr);
+    if(positiveArr.length > negativeArr.length) noParity = positiveArr[positiveArr.length - 1];
+    else if(negativeArr.length > positiveArr.length) noParity = negativeArr[negativeArr.length - 1];
     return noParity;
 };
 
