@@ -26,10 +26,8 @@ function solve1(arr) {
     const reverseArr = copyArr.sort((a, b) => b - a);
     console.log(sortedArr);
     console.log(reverseArr);
-    let numSequence = arr[0];
     for(let i = 0; i < arr.length; i++) {
         console.log("Sorted Array:", sortedArr[i], "Reverse Arr:", reverseArr[i]);
-        numSequence++;
     }
 }
 
