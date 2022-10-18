@@ -7,7 +7,8 @@ function solve(arr) {
     //console.log(negativeArr);
     const dynamicLen = positiveArr.length > negativeArr.length || negativeArr.length > positiveArr.length; 
     for(let i = 0; i < dynamicLen; i++) {
-        if(positiveArr[i] !== negativeArr[i]) noParity = positiveArr[i];
+        if(positiveArr[i] !== Math.abs(negativeArr[i])) noParity = positiveArr[i];
+        else if(negativeArr[i] !== -Math.abs(positiveArr[i])) noParity = negativeArr[i];
     }
     /*if(positiveArr.length > negativeArr.length) noParity = positiveArr[positiveArr.length - 1];
     else if(negativeArr.length > positiveArr.length) noParity = negativeArr[negativeArr.length - 1];*/
