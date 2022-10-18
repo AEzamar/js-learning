@@ -22,11 +22,12 @@ console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
     const sortedArr = arr.sort((a, b) => a - b);
+    const reverseSortedArr = arr.sort((a, b) => b - a);
     let numSequence = arr[0];
     for(let i = 0; i < sortedArr.length; i++) {
-        console.log("Sequence:", numSequence);
-        console.log("Sorted Array:", sortedArr);
-        startingPoint++;
+        console.log("Sequence:", numSequence, "Sorted Array:", sortedArr[i]);
+        console.log();
+        numSequence++;
     }
 }
 
