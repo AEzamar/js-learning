@@ -22,9 +22,10 @@ console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
     const sortedArr = arr.sort((a, b) => a - b);
-    let startingPoint = arr[0];
-    for(let i = 0; i < arr.length; i++) {
-        console.log(startingPoint);
+    let numSequence = arr[0];
+    for(let i = 0; i < sortedArr.length; i++) {
+        console.log("Sequence:", numSequence);
+        console.log("Sorted Array:", sortedArr);
         startingPoint++;
     }
 }
