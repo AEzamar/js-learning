@@ -6,8 +6,11 @@ function solve(arr) {
     const negativeArr = arr.filter(ele => ele < 0).sort((a, b) => b - a);
     //console.log(negativeArr);
     const dynamicLen = positiveArr.length > negativeArr.length || negativeArr.length > positiveArr.length; 
-    if(positiveArr.length > negativeArr.length) noParity = positiveArr[positiveArr.length - 1];
-    else if(negativeArr.length > positiveArr.length) noParity = negativeArr[negativeArr.length - 1];
+    for(let i = 0; i < dynamicLen; i++) {
+        if(positiveArr[i] !== negativeArr[i]) noParity = positiveArr[i];
+    }
+    /*if(positiveArr.length > negativeArr.length) noParity = positiveArr[positiveArr.length - 1];
+    else if(negativeArr.length > positiveArr.length) noParity = negativeArr[negativeArr.length - 1];*/
     return noParity;
 };
 
