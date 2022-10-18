@@ -21,12 +21,14 @@ console.log(solve([-3, 1, 2, 3, -1, -4, -2]));
 console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
+    const copyArr = [...arr];
     const sortedArr = arr.sort((a, b) => a - b);
-    const reverseSortedArr = arr.sort((a, b) => b - a);
+    const reverseArr = copyArr.sort((a, b) => b - a);
+    console.log(sortedArr);
+    console.log(reverseArr);
     let numSequence = arr[0];
-    for(let i = 0; i < sortedArr.length; i++) {
-        console.log("Sequence:", numSequence, "Sorted Array:", sortedArr[i]);
-        console.log();
+    for(let i = 0; i < arr.length; i++) {
+        console.log("Sorted Array:", sortedArr[i], "Reverse Arr:", reverseArr[i]);
         numSequence++;
     }
 }
