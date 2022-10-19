@@ -21,18 +21,13 @@ console.log(solve([-3, 1, 2, 3, -1, -4, -2]));
 console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
-    /*const copyArr = [...arr];
-    const sortedArr = arr.sort((a, b) => a - b);
-    const reverseArr = copyArr.sort((a, b) => b - a);
-    console.log(sortedArr);
-    console.log(reverseArr);*/
     const positiveArr = arr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = arr.filter(item => item < 0).sort((a, b) => b - a);
     console.log(positiveArr);
     console.log(negativeArr);
     for(let i = 0; i < arr.length; i++) {
         if(-Math.abs(positiveArr[i]) !== negativeArr[i]) return positiveArr[i];
-        if(Math.abs(negativeArr[i]) !== positiveArr[i]) return negativeArr[i];
+        else if(Math.abs(negativeArr[i]) !== positiveArr[i]) return negativeArr[i];
     }
 }
 
