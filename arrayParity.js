@@ -32,9 +32,10 @@ function solve1(arr) {
     console.log(negativeArr);
     for(let i = 0; i < arr.length; i++) {
         if(-Math.abs(positiveArr[i]) !== negativeArr[i]) return positiveArr[i];
+        if(Math.abs(negativeArr[i]) !== positiveArr[i]) return negativeArr[i];
     }
 }
 
 console.log(solve1([1, -1, 2, -2, 3]));
 console.log(solve1([1, 3, 2, -1, -3]));
-//console.log(solve1([-3, 1, 2, 3, -1, -4, -2]));
+console.log(solve1([-3, 1, 2, 3, -1, -4, -2]));
