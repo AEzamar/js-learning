@@ -26,13 +26,15 @@ function solve1(arr) {
     const reverseArr = copyArr.sort((a, b) => b - a);
     console.log(sortedArr);
     console.log(reverseArr);*/
-    const positiveArr = arr.filter(item => item > 0);
-    const negativeArr = arr.filter(item => item < 0);
+    const positiveArr = arr.filter(item => item > 0).sort((a, b) => a - b);
+    const negativeArr = arr.filter(item => item < 0).sort((a, b) => b - a);
+    console.log(positiveArr);
+    console.log(negativeArr);
     for(let i = 0; i < arr.length; i++) {
-        console.log("Sorted Array:", sortedArr[i], "Reverse Arr:", reverseArr[i]);
+        if(-Math.abs(positiveArr[i]) !== negativeArr[i]) return positiveArr[i];
     }
 }
 
-//console.log(solve1([1, -1, 2, -2, 3]));
-console.log(solve([1, 3, 2, -1, -3]));
+console.log(solve1([1, -1, 2, -2, 3]));
+console.log(solve1([1, 3, 2, -1, -3]));
 //console.log(solve1([-3, 1, 2, 3, -1, -4, -2]));
