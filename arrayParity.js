@@ -23,11 +23,6 @@ console.log(solve([1, -1, 2, -2, 3, 3]));*/
 function solve1(arr) {
     const positiveArr = arr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = arr.filter(item => item < 0).sort((a, b) => b - a);
-    let dynamicLen;
-    positiveArr.length > negativeArr.length ? dynamicLen = positiveArr.length : dynamicLen = negativeArr.length; 
-    console.log(positiveArr);
-    console.log(negativeArr);
-    //console.log(dynamicLen);
     for(let i = 0; i < arr.length; i++) {
         if(positiveArr.length > negativeArr.length) {
             if(-Math.abs(positiveArr[i]) !== negativeArr[i]) return positiveArr[i];
