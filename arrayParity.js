@@ -28,9 +28,12 @@ function solve1(arr) {
     console.log(positiveArr);
     console.log(negativeArr);
     //console.log(dynamicLen);
-    for(let i = 0; i < dynamicLen; i++) {
-        if(-Math.abs(positiveArr[i]) !== negativeArr[i]) return positiveArr[i];
-        else if(Math.abs(negativeArr[i]) !== positiveArr[i]) return negativeArr[i];
+    for(let i = 0; i < arr.length; i++) {
+        if(positiveArr.length > negativeArr.length) {
+            if(-Math.abs(positiveArr[i]) !== negativeArr[i]) return positiveArr[i];
+        }else {
+            if(Math.abs(negativeArr[i]) !== positiveArr[i]) return negativeArr[i];
+        };
     }
 }
 
