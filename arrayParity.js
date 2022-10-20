@@ -9,16 +9,9 @@ function solve(arr) {
     for(let i = 0; i < dynamicLen; i++) {
         if(positiveArr[i] !== Math.abs(negativeArr[i])) noParity = positiveArr[i];
         else if(negativeArr[i] !== -Math.abs(positiveArr[i])) noParity = negativeArr[i];
-    }
-    /*if(positiveArr.length > negativeArr.length) noParity = positiveArr[positiveArr.length - 1];
-    else if(negativeArr.length > positiveArr.length) noParity = negativeArr[negativeArr.length - 1];*/
+    };
     return noParity;
 };
-
-/*console.log(solve([1, -1, 2, -2, 3]));
-console.log(solve([1, 3, 2, -1, -3]));
-console.log(solve([-3, 1, 2, 3, -1, -4, -2]));
-console.log(solve([1, -1, 2, -2, 3, 3]));*/
 
 function solve1(arr) {
     const positiveArr = arr.filter(item => item > 0).sort((a, b) => a - b);
