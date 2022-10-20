@@ -9,7 +9,7 @@ function solve(arr) {
     for(let i = 0; i < dynamicLen; i++) {
         if(positiveArr[i] !== Math.abs(negativeArr[i])) noParity = positiveArr[i];
         else if(negativeArr[i] !== -Math.abs(positiveArr[i])) noParity = negativeArr[i];
-    };
+    }
     return noParity;
 };
 
@@ -28,3 +28,4 @@ function solve1(arr) {
 console.log(solve1([1, -1, 2, -2, 3]));
 console.log(solve1([1, 3, 2, -1, -3]));
 console.log(solve1([-3, 1, 2, 3, -1, -4, -2]));
+console.log(solve1([1, -1, 2, -2, 3, 3]));
