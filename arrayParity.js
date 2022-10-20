@@ -7,8 +7,8 @@ function solve(arr) {
         }else {
             if(Math.abs(negativeArr[i]) !== positiveArr[i]) return negativeArr[i];
         };
-    }
-}
+    };
+};
 
 console.log(solve1([1, -1, 2, -2, 3]));
 console.log(solve1([1, 3, 2, -1, -3]));
