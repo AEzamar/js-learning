@@ -13,7 +13,7 @@ function zeroPlentiful(arr) {
             zeroCount = 0;
             sequenceCount = 0;
         }
-    return outerCount > 0 ? sequenceCount = outerCount : sequenceCount;
+        return outerCount > 0 ? sequenceCount = outerCount : sequenceCount;
     }
 };
 
