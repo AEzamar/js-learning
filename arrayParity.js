@@ -1,16 +1,3 @@
-/*function solve(arr) {
-    let noParity = 0;
-    const copyArr = [...arr];
-    const positiveArr = arr.filter(ele => ele > 0).sort((a, b) => a - b);
-    const negativeArr = arr.filter(ele => ele < 0).sort((a, b) => b - a);
-    const dynamicLen = positiveArr.length > negativeArr.length || negativeArr.length > positiveArr.length; 
-    for(let i = 0; i < dynamicLen; i++) {
-        if(positiveArr[i] !== Math.abs(negativeArr[i])) noParity = positiveArr[i];
-        else if(negativeArr[i] !== -Math.abs(positiveArr[i])) noParity = negativeArr[i];
-    }
-    return noParity;
-};*/
-
 function solve(arr) {
     const positiveArr = arr.filter(item => item > 0).sort((a, b) => a - b);
     const negativeArr = arr.filter(item => item < 0).sort((a, b) => b - a);
