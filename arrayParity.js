@@ -14,3 +14,7 @@ console.log(solve1([1, -1, 2, -2, 3]));
 console.log(solve1([1, 3, 2, -1, -3]));
 console.log(solve1([-3, 1, 2, 3, -1, -4, -2]));
 console.log(solve1([1, -1, 2, -2, 3, 3]));
+
+//User submitted
+//Good lord Jesus Tap Dancing Christ, this is one line of code
+//const solve = array => array.find(value => !array.includes(-value))
