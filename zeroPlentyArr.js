@@ -9,7 +9,7 @@ function zeroPlentiful(arr) {
                 sequenceCount++;
                 outerCount++;
             }
-        }else {
+        }else{
             zeroCount = 0;
             sequenceCount = 0;
         }
