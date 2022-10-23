@@ -4,10 +4,11 @@ function sortByValueAndIndex(array)
 	//let sortedArr;
 	for(let i = 0; i < array.length; i++) {
 		sortedArr = array.sort((a, b)=> {
-			const productA = a * i + 1;
-			const productB = b * i + 1; 
+			const productA = a * (i + 1);
+			const productB = b * (i + 1); 
 			if(productA < productB) return -1;
 			if(productB > productB) return 1;
+			return 0;
 		});
 	}
 	return sortedArr;
