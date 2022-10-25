@@ -1,5 +1,5 @@
 const sumAverage = (arr) => {
-  return arr[1].reduce((total, curr, _, arr) => total + curr / arr.length, 0);
+  return for(let subArr in arr)subArr.reduce((total, curr, _, arr) => total + curr / arr.length, 0);
   //return Math.floor(result);
 }
 
