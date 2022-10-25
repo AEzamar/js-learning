@@ -2,15 +2,17 @@ function sortByValueAndIndex(array)
 {
 	//let sortedArr = array.map((_, i, ary) => ary.sort((a, b) => a * i + 1 - b * i + 1));
 	//let sortedArr;
-		let sortedArr = array.sort((a, b)=> {
-			const productA = a * i + 1;
-			const productB = b * i + 1; 
+		let sortedArr = array.sort((a, b) => {
+			let indexer = 1
+			const productA = a * indexer;
+			const productB = b * indexer; 
 			if(productA < productB) {
 				return -1;
 			}
 			if(productB > productA) {
 				return 1;
 			}
+			indexer++;
 			return 0;
 			});
 		return sortedArr;
