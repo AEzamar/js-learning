@@ -1,7 +1,6 @@
 const sumAverage = (arr) => {
-  let result = 0;
-    arr.map(subArr => result += subArr.reduce((total, curr, _, arr) => total + curr / arr.length, 0));
-  return Math.floor(result);
+  return arr[1].reduce((total, curr, _, arr) => total + curr / arr.length, 0);
+  //return Math.floor(result);
 }
 
 console.log(sumAverage([[3, 4, 1, 3, 5, 1, 4], [21, 54, 33, 21, 77]]));
