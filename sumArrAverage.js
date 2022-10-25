@@ -1,8 +1,6 @@
 const sumAverage = (arr) => {
   let result = 0;
-  for(let i = 0; i < arr.length; i++) {
-    result += arr[i].reduce((total, curr, _, arr) => total + curr / arr.length, 0);
-  }
+    arr.map(subArr => result += subArr.reduce((total, curr, _, arr) => total + curr / arr.length, 0));
   return Math.floor(result);
 }
 
