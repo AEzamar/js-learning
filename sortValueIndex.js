@@ -8,7 +8,7 @@ function sortByValueAndIndex(array)
 			if(productA < productB) {
 				return -1;
 			}
-			if(productB > productB) {
+			if(productB > productA) {
 				return 1;
 			}
 			return 0;
@@ -18,3 +18,11 @@ function sortByValueAndIndex(array)
 };
 
 console.log(sortByValueAndIndex([23, 2, 3, 4, 5]));
+
+function sortByValueAndIndex1(array)
+{
+	function customSort(a, b, index) {
+		if(a * index + 1 < b * index + 1) return -1
+		if(b * index + 1 >)
+	}
+}
