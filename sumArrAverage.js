@@ -1,6 +1,6 @@
 const sumAverage = (arr) => {
   let result = 0;
-  for(const subArr in arr) {
+  for(const subArr of arr) {
     result += subArr.reduce((total, curr, _, arr) => total + curr / arr.length, 0);
   }
   return Math.floor(result);
