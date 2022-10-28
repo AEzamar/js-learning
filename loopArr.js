@@ -3,10 +3,10 @@
 function loopArr(arr, direction, steps) {
 	const outputArr = [];
 	const copyArr = [...arr]
-	console.log(copyArr.splice(steps, steps + 1, 1));
+	//console.log(copyArr.splice(steps, 1));
 	if(direction.toLowerCase() === 'left') {
 		for(let i = 0; i < arr.length; i++) {
-			outputArr.push(arr.splice(steps, steps + 1, 1));
+			outputArr.push(...copyArr.splice(steps, 1));
 		}
 	}
 	return outputArr;
