@@ -4,6 +4,9 @@ function loopArr(arr, direction, steps) {
 	const outputArr = [];
 	const rightLoop = arr.splice(0,)
 	if(direction.toLowerCase === 'left') {
-
+		for(let i = 0; i < arr.length; i++) {
+			outputArr.push(arr.splice(steps, steps + 1, 1));
+		}
 	}
+	return outputArr;
 }
