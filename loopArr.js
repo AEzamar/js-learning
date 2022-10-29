@@ -8,15 +8,14 @@ function loopArr(arr, direction, steps) {
 			outputArr.push(...copyArr.splice(steps, 1));
 		}
 		if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length));
-	}
-	if(direction.toLowerCase() === "left") {
+	}else if(direction.toLowerCase() === "right") {
 		for(let j = 0; j <= copyArr.length; j++) {
 			outputArr.unshift(...copyArr.splice(steps, 1))
 		}
 		if(copyArr.length) outputArr.unshift(...copyArr.slice(0, copyArr.length))
 	}
-		
 	return outputArr;
 }
 
 console.log(loopArr([1, 5, 87, 45, 8, 8], "left", 2));
+console.log(loopArr([1, 5, 87, 45, 8, 8], "right", 2));
