@@ -2,7 +2,7 @@
 //removing elements from start and adding them to end of array one-by-one (if direction is "left")
 function loopArr(arr, direction, steps) {
 	const outputArr = [];
-	const copyArr = [...arr]
+	const copyArr = [...arr];
 	if(direction.toLowerCase() === 'left') {
 		for(let i = 0; i <= copyArr.length; i++) {
 			outputArr.push(...copyArr.splice(steps, 1));
@@ -10,9 +10,10 @@ function loopArr(arr, direction, steps) {
 		if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length));
 	}else if(direction.toLowerCase() === "right") {
 		for(let j = 0; j <= copyArr.length; j++) {
-			outputArr.unshift(...copyArr.splice(steps, 1))
+			console.log(copyArr.splice(copyArr.length - steps, 1));
+			//outputArr.unshift(...copyArr.splice(steps, 1));
 		}
-		//if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length))
+		//if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length));
 	}
 	return outputArr;
 }
