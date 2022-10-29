@@ -9,8 +9,8 @@ function loopArr(arr, direction, steps) {
 		}
 		if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length));
 	}else if(direction.toLowerCase() === "right") {
-		for(let j = 0; j <= copyArr.length; j++) {
-			console.log(copyArr.splice(copyArr.length - steps, 1));
+		for(let j = copyArr.length; j >= 0; j--) {
+			outputArr.unshift(...copyArr.splice(copyArr.length - steps, 1));
 			//outputArr.unshift(...copyArr.splice(steps, 1));
 		}
 		//if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length));
