@@ -9,7 +9,7 @@ function loopArr(arr, direction, steps) {
 		}
 		if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length));
 	}else if(direction.toLowerCase() === "right") {
-		for(let j = copyArr.length; j >= 0; j--) {
+		for(let j = 0; j <= copyArr.length; j++) {
 			outputArr.unshift(...copyArr.splice(steps, 1))
 		}
 		//if(copyArr.length) outputArr.push(...copyArr.slice(0, copyArr.length))
