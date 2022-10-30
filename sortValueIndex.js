@@ -1,19 +1,19 @@
 function sortByValueAndIndex(array)
 {
-		let sortedArr = array.sort((a, b) => {
-			let indexer = 1
-			const productA = a * indexer;
-			const productB = b * indexer; 
-			if(productA < productB) {
-				return -1;
-			}
-			if(productB > productA) {
-				return 1;
-			}
-			indexer++;
-			return 0;
-			});
-		return sortedArr;
+	let sortedArr = array.sort((a, b) => {
+		let indexer = 1
+		const productA = a * indexer;
+		const productB = b * indexer; 
+		if(productA < productB) {
+			return -1;
+		}
+		if(productB > productA) {
+			return 1;
+		}
+		indexer++;
+		return 0;
+	});
+	return sortedArr;
 };
 
 console.log(sortByValueAndIndex([23, 2, 3, 4, 5]));
