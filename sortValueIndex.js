@@ -1,7 +1,7 @@
+let indexer = 1
 function sortByValueAndIndex(array)
 {
 	let sortedArr = array.sort((a, b) => {
-		let indexer = 1
 		const productA = a * indexer;
 		const productB = b * indexer; 
 		if(productA < productB) {
