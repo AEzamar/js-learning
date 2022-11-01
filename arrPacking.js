@@ -1,10 +1,9 @@
 function arrayPacking(a) {
-	return parseInt(a
+	return a
 		.map(num => num.toString(2))
 		.map(binStr => binStr.padStart(8, '0'))
 		.join("")
 		//.reduce((total, curr) => total + curr , 0)
-		, 2)
 		//.reduce((total, curr) => total + curr , 0)
 		//.map(binNum => parseInt(binNum, 2))
 		//.sort((a, b) => a - b)
