@@ -2,7 +2,6 @@ function arrayPacking(a) {
 	return a
 		.map(num => num.toString(2))
 		.map(binStr => binStr.padStart(8, '0'))
-		.sort()
 		.join("")
 		//.reduce((total, curr) => total + curr , 0)
 		//.reduce((total, curr) => total + curr , 0)
