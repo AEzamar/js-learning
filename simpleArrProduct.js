@@ -6,4 +6,4 @@ function solve(arr) {
     return maxProduct;
 }
 
-console.log(solve())
+console.log(solve([[1, 2],[3, 4]]));
