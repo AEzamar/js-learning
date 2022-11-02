@@ -1,9 +1,9 @@
 function solve(arr) {
     let maxProduct = 0;
     //console.log(...arr);
-    const spreadArr = [...arr];
+    const [...spreadArr] = [...arr];
     console.log(spreadArr.reduce((total, curr) => total * curr, 0));
-    console.log(spreadArr);
+    //console.log(spreadArr);
     for(let i = 0; i <= spreadArr.length; i++) {
         arr.reduce((total, curr) => total * curr, 0);
     }
