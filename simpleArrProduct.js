@@ -6,7 +6,7 @@ function multiplyArr(arr) {
 
 function solve(arr) {
     for(let i = 0; i < arr.length; i++) {
-        console.log(arr[i][i] * arr[i + 1][i])
+        //console.log(arr[i][i] * arr[i + 1][i])
     }
     let maxProduct = 0;
     const spreadArr = arr.reduce((total, curr) => total.concat(curr));
@@ -15,12 +15,15 @@ function solve(arr) {
     //return maxProduct;
 };
 
-console.log(solve([[1, 2],[3, 4]]));
+//console.log(solve([[1, 2],[3, 4]]));
 
 function solve1(arr) {
     for(let i = 0; i < arr.length; i++) {
-        for(let j = 0; j < arr.length; j++) {
-            
+        for(let j = 0; j < arr[i].length; j++) {
+            console.log('First arr:', arr[i][i], 'Second arr:', arr[j][j]);
+            //console.log(arr[i][i] * arr[j][j]);
         }
     }
 }
+
+console.log(solve1([[1, 2],[3, 4]]));
