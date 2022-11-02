@@ -22,7 +22,7 @@ function solve1(arr) {
     let numIndex = 0;
     for(let i = 0; i < arr.length; i++) {
         for(let j = 0; j < spreadArr.length; j++) {
-            console.log(arr[i]);
+            console.log(arr[i][j]);
         }
     }
 }
