@@ -20,7 +20,8 @@ function solve(arr) {
 function solve1(arr) {
     for(let i = 0; i < arr.length; i++) {
         for(let j = 0; j < arr[i].length; j++) {
-            console.log('First arr:', arr[j][i], 'Second arr');
+            //console.log('First arr:', arr[i][j], 'Second arr');
+            console.log(arr[i][j] * arr[j][i]);
             //console.log(arr[i][i] * arr[j][j]);
         }
     }
