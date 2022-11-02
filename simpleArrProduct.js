@@ -6,7 +6,8 @@ function multiplyArr(arr) {
 
 function solve(arr) {
     let maxProduct = 0;
-    const spreadArr = [...arr];
+    const [...spreadArr] = [...arr];
+    console.log(arr.reduce((total, curr) => total + curr));
     console.log(spreadArr);
     return arr.map(subArr => subArr.reduce((total, curr) => total * curr, 0));
     //return maxProduct;
