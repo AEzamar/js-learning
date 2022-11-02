@@ -20,7 +20,8 @@ function solve(arr) {
 function solve1(arr) {
     const spreadArr = arr.reduce((total, curr) => total.concat(curr));
     let numIndex = 0;
-    console.log(spreadArr.reduce((total, curr) => total * curr))
+    const productArr = [];
+    //console.log(spreadArr.reduce((total, curr) => total * curr))
     for(let i = 0; i < arr.length; i++) {
         for(let j = 0; j < spreadArr.length; j++) {
             console.log(arr[i][j]);
