@@ -23,10 +23,11 @@ function solve1(arr) {
     const productArr = [];
     //console.log(spreadArr.reduce((total, curr) => total * curr))
     for(let i = 0; i < arr.length; i++) {
-        for(let j = 0; j < spreadArr.length; j++) {
-            console.log(arr[i][j]);
+        for(let j = 1; j < spreadArr.length; j++) {
+            productArr.push(arr[i][i] * arr[j][i]);
         }
     }
+    return productArr;
 }
 
 console.log(solve1([[1, 2],[3, 4]]));
