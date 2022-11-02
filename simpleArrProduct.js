@@ -23,12 +23,14 @@ function solve1(arr) {
     const productArr = [];
     //console.log(spreadArr.reduce((total, curr) => total * curr))
     for(let i = 0; i < arr.length; i++) {
-        for(let j = 1; j < spreadArr.length; j++) {
+        console.log('Sub Arr iteration:', arr[numIndex][i]);
+        numIndex++;
+        /*for(let j = 1; j < spreadArr.length; j++) {
             console.log("Array 1:", arr[i]);
             console.log("Array 2:", arr[j]);
             console.log(arr[i][j]);
             //productArr.push(arr[i][i] * arr[j][i]);
-        }
+        }*/
     }
     return productArr;
 }
