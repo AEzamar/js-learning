@@ -18,10 +18,12 @@ function solve(arr) {
 //console.log(solve([[1, 2],[3, 4]]));
 
 function solve1(arr) {
+    const spreadArr = arr.reduce((total, curr) => total.concat(curr));
     let numIndex = 0;
     for(let i = 0; i < arr.length; i++) {
-        numIndex++;
-        console.log(arr[i][numIndex]);
+        for(let j = 0; j < spreadArr.length; j++) {
+            console.log(arr[i]);
+        }
     }
 }
 
