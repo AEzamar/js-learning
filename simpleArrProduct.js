@@ -18,12 +18,10 @@ function solve(arr) {
 //console.log(solve([[1, 2],[3, 4]]));
 
 function solve1(arr) {
+    let numIndex = 0;
     for(let i = 0; i < arr.length; i++) {
-        for(let j = 0; j < arr[i].length; j++) {
-            //console.log('First arr:', arr[i][j], 'Second arr');
-            console.log(arr[i][j] * arr[j][i]);
-            //console.log(arr[i][i] * arr[j][j]);
-        }
+        numIndex++;
+        console.log(arr[i][numIndex]);
     }
 }
 
