@@ -23,7 +23,7 @@ function solve1(arr) {
     const productArr = [];
     //console.log(spreadArr.reduce((total, curr) => total * curr))
     for(let i = 0; i < arr.length; i++) {
-        productArr.push(arr[i][i] * arr[i + 1][i + 1]);
+        productArr.push(arr[i][i] * arr[i][i]);
     }
     return productArr;
 }
