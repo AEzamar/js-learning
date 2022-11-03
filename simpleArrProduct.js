@@ -23,6 +23,8 @@ function solve1(arr) {
     //while(arr.length) {
         arr.map(subArr => productArr.push(subArr.shift()));
     //}
+    const multiplyArr = productArr.reduce((total, curr) => total * curr);
+    console.log(multiplyArr);
     return productArr;
 }
 
