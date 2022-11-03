@@ -24,9 +24,9 @@ function solve1(arr) {
     //console.log(spreadArr.reduce((total, curr) => total * curr))
     for(let i = 0; i < arr.length; i++) {
         for(let j = 1; j < spreadArr.length; j++) {
-            console.log("Array 1:", arr[i]);
-            console.log("Array 2:", arr[j]);
-            console.log(arr[i][j]);
+            /*console.log("Array 1:", arr[i]);
+            console.log("Array 2:", arr[j]);*/
+            console.log(arr[j][i]);
             //productArr.push(arr[i][i] * arr[j][i]);
         }
     }
