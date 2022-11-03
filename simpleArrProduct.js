@@ -20,6 +20,9 @@ function solve(arr) {
 function solve1(arr) {
     const spreadArr = arr.reduce((total, curr) => total.concat(curr));
     const productArr = [];
+    //while(arr.length) {
+        arr.map(subArr => productArr.push(subArr.shift()));
+    //}
     return productArr;
 }
 
