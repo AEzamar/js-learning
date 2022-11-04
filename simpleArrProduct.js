@@ -20,11 +20,12 @@ function solve(arr) {
 function solve1(arr) {
     const spreadArr = arr.reduce((total, curr) => total.concat(curr));
     const productArr = [];
-    //while(arr.length) {
+    /*while(arr.length) {
         arr.map(subArr => productArr.push(subArr.shift()));
-    //}
-    const multiplyArr = productArr.reduce((total, curr) => total * curr);
-    console.log(multiplyArr);
+        arr.map(subArr => productArr.push(subArr.pop()))
+    }*/
+    //const multiplyArr = productArr.reduce((total, curr) => total * curr);
+    //console.log(multiplyArr);
     return productArr;
 }
 
