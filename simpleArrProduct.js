@@ -16,17 +16,3 @@ function solve(arr) {
 };
 
 //console.log(solve([[1, 2],[3, 4]]));
-
-function solve1(arr) {
-    const spreadArr = arr.reduce((total, curr) => total.concat(curr));
-    const productArr = [];
-    /*while(arr.length) {
-        arr.map(subArr => productArr.push(subArr.shift()));
-        arr.map(subArr => productArr.push(subArr.pop()))
-    }*/
-    //const multiplyArr = productArr.reduce((total, curr) => total * curr);
-    //console.log(multiplyArr);
-    return productArr;
-}
-
-console.log(solve1([[1, 2],[3, 4]]));
