@@ -1,5 +1,9 @@
 function multiplyArr(arr) {
-    
+    let i = 0;
+    while(arr[i].length) {
+        arr[i].shift();
+        i++;
+    }
 }
 
 function solve(arr) {
