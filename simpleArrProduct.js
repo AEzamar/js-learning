@@ -1,9 +1,11 @@
 function multiplyArr(arr) {
     let i = 0;
+    let maxProduct = 0;
     while(arr[i].length) {
-        arr[i].shift();
+        maxProduct += arr[i].shift() * arr[i].pop();
         i++;
     }
+    return maxProduct;
 }
 
 function solve(arr) {
